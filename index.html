@@ -1,83 +1,66 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gerador de senha</title>
-        <!-- links externos-->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        >
-        <!--css-->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <!--js-->
-        <script src="./assets/js/main.js" defer></script>
-        <script src="./assets/js/color.js" defer></script>
-    </head>
-    <body>
-        <div id="register-container">
-            <div id="register-banner">
-                <div id="banner-layer">
-                    <h1 id="txt">Seja bem-vindo</h1>
-                </div>
-            </div>
-            <div id="register-form">
-                <h2>
-                    Crie sua conta
-                </h2>
-                <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
-                <div class="form-control">
-                    <label for="name">Nome</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Digite seu nome"
-                    >
-                </div>
-                <div class="form-control">
-                    <label for="name">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Digite seu e-mail"
-                    >
-                </div>
-                <label class="labelPass" for="password">Senha</label>
-                <div class="form-pass">
-                   
-                    <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        maxlength="10"
-                        placeholder="Digite sua senha"
-                    >
-                    <span id="toggleBtn"></span>
-                </div>
-                <p>
-                    Quer ajuda para criar uma senha segura ?
-                    <span id="generate-password">Clique aqui.</span>
-                </p>
-                <div id="generated-password">
-                    <p>Aqui está a sua senha:</p>
-                    <h4></h4>
-                </div>
-                <input type="submit" value="Cadastrar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <!-- links externos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--js-->
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/color.js" defer></script>
+</head>
+
+<body>
+    <div id="register-container">
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1 id="txt">Seja bem-vindo</h1>
             </div>
         </div>
-        <div class="colors">
-            <span class="active" onclick="trocarCor('#1dd2a1')" style="--clr:#1dd2a1"></span>
-            <span onclick="white('#fff')" style="--clr:#fff"></span>
-            <span onclick="trocarCor('#2e86de')" style="--clr:#2e86de"></span>
-            <span onclick="trocarCor('#bd1212')" style="--clr:#bd1212"></span>
-            <span onclick="trocarCor('#ff9f43')" style="--clr:#ff9f43"></span>
+        <div id="register-form">
+            <h2>
+                Crie sua conta
+            </h2>
+            <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+            <div class="form-control">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-control">
+                <label for="name">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <label class="labelPass" for="password">Senha</label>
+            <div class="form-pass">
+
+                <input type="password" name="password" id="password" maxlength="10" placeholder="Digite sua senha">
+                <span id="toggleBtn"></span>
+            </div>
+            <p>
+                Quer ajuda para criar uma senha segura ?
+                <span id="generate-password">Clique aqui.</span>
+            </p>
+            <div id="generated-password">
+                <p>Aqui está a sua senha:</p>
+                <h4></h4>
+            </div>
+            <input type="submit" value="Cadastrar">
         </div>
-    </body>
+    </div>
+    <div class="colors">
+        <span class="active" onclick="trocarCor('#1dd2a1')" style="--clr:#1dd2a1"></span>
+        <span onclick="white('#fff')" style="--clr:#fff"></span>
+        <span onclick="trocarCor('#2e86de')" style="--clr:#2e86de"></span>
+        <span onclick="trocarCor('#bd1212')" style="--clr:#bd1212"></span>
+        <span onclick="trocarCor('#ff9f43')" style="--clr:#ff9f43"></span>
+    </div>
+</body>
+
 </html>
